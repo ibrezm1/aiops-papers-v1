@@ -1,0 +1,36 @@
+{
+  "theme": "GitHub",
+  "usageStatisticsEnabled": true,
+  "experimental": {
+    "plan": true
+  },
+  "checkpointing": {
+    "enabled": true
+  },
+  "mcp": {
+    "allowed": [
+      "paper-search-nodejs",
+      "pdf-reader"
+    ]
+  },
+  "mcpServers": {
+    "paper-search-nodejs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "paper-search-mcp-nodejs"
+      ],
+      "cwd": ".",
+      "timeout": 15000
+    },
+    "pdf-reader": {
+      "command": "npx",
+      "args": [
+        "@sylphx/pdf-reader-mcp"
+      ],
+      "cwd": ".",
+      "timeout": 15000
+    }
+
+  }
+}
